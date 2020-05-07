@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 # برنامه ها
 
 ## فهرست مطالب
@@ -19,3 +21,4 @@
 
 ### چت
 - [Telegram](./content/Telegram/) [این صفحه منتقل شود](https://wiki.archusers.ir/index.php/Telegram)
+</div>

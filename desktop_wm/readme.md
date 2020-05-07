@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 # دسکتاپ و مدیر پنجره
 
 ## فهرست مطالب
@@ -5,3 +7,4 @@
 - [مدیر پنجره](./conetnt/window_manager) [این صفحه منتقل شود](https://wiki.archusers.ir/index.php/Window_manager)
 - [KDE](./content/kde) [این صفحه منتقل شود](https://wiki.archusers.ir/index.php/KDE)
 - [کانکی](./content/conky) [این صفحه منتقل شود](https://wiki.archusers.ir/index.php/Conky)
+</div>

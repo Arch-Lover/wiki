@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 # دیسک و فایل سیستم
 
 ## فهرست مطالب
@@ -7,3 +9,4 @@
 - [fdisk](./content/fdisk) [این صفحه منتقل شود](https://wiki.archusers.ir/index.php/Fdisk)
 
 
+</div>
