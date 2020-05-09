@@ -9,6 +9,8 @@ to render markdown files into their corresponding layouts.
 - [x] Mobile friendly layouts
 - [x] Limit page width for better readability
 - [ ] Add monospace font for code sections
+- [ ] Fix image width
+- [ ] LTR inline code
 - [ ] Add favicon
 - [ ] Incorporate new logo (morealz's logo competition)
 - [ ] Use [this](https://github.com/allejo/jekyll-toc) to render Table of Content
