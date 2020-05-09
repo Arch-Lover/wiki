@@ -71,14 +71,14 @@ title: راهنمای ویکی
 
 ![random image from unsplash](https://source.unsplash.com/IdLezSyNKdk/1600x900)
 
-## دیگر
+## لینک
 
 ```
 [link](bbs.archusers.ir/)
 ```
 این یک لینک به [انجمن](bbs.archusers.ir/) است.
 
-برای وارد کردن نظرات دیگران (quote):
+## نظرات دیگران (quote)
 
 ```
 > some line
