@@ -3,7 +3,6 @@ layout: category
 title: تازه‌کارها
 ---
 
-# تازه کاران
 
 ## فهرست مطالب
 - [راهنمای تازه‌کاران](./beginners_guide.html) [این صفحه منتقل شود](https://wiki.archusers.ir/index.php/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C_%D8%AA%D8%A7%D8%B2%D9%87%E2%80%8C%DA%A9%D8%A7%D8%B1%D8%A7%D9%86)

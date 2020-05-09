@@ -1,5 +1,6 @@
 @import "native";
 @import "font";
+@import "vars";
 
 * {
 	font-family: Vazir;
@@ -13,5 +14,107 @@ html, body {
 	margin: 0;
 }
 
-@import "category";
-@import "post";
+.navigation-bar {
+	width: 100%;
+	margin: 0;
+	padding: 20px;
+	background: linear-gradient(to right, $dark-blue, $light-blue);
+}
+.navigation-bar a {
+	color: white;
+	padding: 15px 20px;
+	transition: color 1s;
+}
+.navigation-bar a:hover {
+	color: black;
+}
+
+.page-header {
+	margin: 0px 0px 15px 0px;
+	padding: 100px 0;
+	text-align: center;
+	background: linear-gradient(to right, #2193b0, #6dd5ed);
+	color: white;
+	width: 100%;
+}
+
+.page-wrapper-outer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.page-wrapper-inner {
+	width: 1000px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	@media(max-width: 1000px) {
+		width: 100%;
+		padding: 0 8px;
+	}
+}
+
+h2 {
+	font-weight: normal;
+	border-bottom: 1px solid grey;
+	padding: 15px 5px;
+	margin: 30px 0px;
+}
+h3 {
+	padding: 10px;
+	margin: 5px 5px;
+}
+
+a {
+	text-decoration: none;
+	color: #2193b0;
+	transition: color 1s;
+}
+a:hover {
+	color: black;
+}
+
+ul {
+	list-style: none;
+}
+li {
+	padding: 5px 0px;
+}
+li:before {
+	content: "\21D0";
+	margin: 0 0.6em;
+}
+
+table {
+	border-collapse: collapse;
+}
+td {
+	padding: 15px;
+}
+table, td, th {
+	border: 1px solid #ddd;
+}
+
+.highlight {
+	direction: ltr;
+	color: white;
+}
+pre {
+	overflow-x: auto;
+}
+figure {
+	margin: 0;
+}
+.highlight * {
+	direction: ltr;
+}
+.highlight pre {
+	padding: 20px;
+}
+code.language-plaintext {
+	background-color: #ddd;
+	padding: 3px 4px;
+}
+
+

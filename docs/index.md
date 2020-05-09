@@ -2,7 +2,6 @@
 layout: category
 title: ویکی آرچ لینوکس
 ---
-# ویکی آرچ لینوکس
 
 ## فهرست مطالب
 - [تازه کاران](./beginner/index.html)

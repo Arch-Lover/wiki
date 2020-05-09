@@ -3,7 +3,6 @@ layout: category
 title: مدیر بسته
 ---
 
-# مدیریت بسته
 
 ## فهرست مطالب
 - [Pacman](./pacman.html) [این صفحه منتقل شود](https://wiki.archusers.ir/index.php/Pacman)

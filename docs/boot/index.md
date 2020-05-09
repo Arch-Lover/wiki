@@ -3,7 +3,6 @@ layout: category
 title: بوت
 ---
 
-# بوت
 
 ## فهرست مطالب
 - [گراب](./grub.html) [این صفحه منتقل شود](https://wiki.archusers.ir/index.php/%DA%AF%D8%B1%D8%A7%D8%A8)

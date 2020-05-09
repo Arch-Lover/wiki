@@ -3,7 +3,6 @@ layout: category
 title: شبکه
 ---
 
-# شبکه
 
 ## فهرست مطالب
 - [dhcpcd](./dhcpcd.html) [این صفحه منتقل شود](https://wiki.archusers.ir/index.php/Dhcpcd)

@@ -2,12 +2,17 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ page.title }}</title>
-		<link rel="stylesheet" href="/wiki/assets/css/styles.css">
+		<link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
 	</head>
 	<body>
-		<div class="category-wrapper">
-			{{ content }}
+		<div class="page-wrapper-outer">
+			{% include navbar.html %}
+			<h1 class="page-header">{{ page.title }}</h1>
+			<div class="page-wrapper-inner">
+				{{ content }}
+			</div>
 		</div>
 	</body>
 </html>

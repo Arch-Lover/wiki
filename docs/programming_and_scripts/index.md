@@ -3,7 +3,6 @@ layout: category
 title: برنامه نویسی و اسکریپت
 ---
 
-# برنامه نویسی و اسکریپ
 
 ## فهرست مطالب
 - [Java](./java.html) [این صفحه منتقل شود](https://wiki.archusers.ir/index.php/Java)
