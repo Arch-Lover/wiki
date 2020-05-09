@@ -233,6 +233,8 @@ h2 { font-weight: normal; border-bottom: 1px solid grey; padding: 15px 5px; marg
 
 h3 { padding: 10px; margin: 5px 5px; }
 
+p { line-height: 2.3rem; }
+
 a { text-decoration: none; color: #2193b0; transition: color 1s; }
 
 a:hover { color: black; }
