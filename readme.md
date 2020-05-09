@@ -11,6 +11,7 @@ to render markdown files into their corresponding layouts.
 - [ ] Add monospace font for code sections
 - [ ] Fix image width
 - [ ] LTR inline code
+- [ ] style quotes
 - [ ] Add favicon
 - [ ] Incorporate new logo (morealz's logo competition)
 - [ ] Use [this](https://github.com/allejo/jekyll-toc) to render Table of Content
