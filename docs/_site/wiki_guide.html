@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>راهنمای ویکی</title>
+		<link rel="stylesheet" href="/assets/css/styles.css">
+	</head>
+	<body>
+		<div class="page-wrapper-outer">
+			<nav class="navigation-bar">
+	<a href="/wiki">صفحه‌ی اصلی</a>
+	<a href="/wiki/wiki_guide.html">راهنمای ویکی</a>
+	<a href="https://bbs.archusers.ir/">انجمن</a>
+</nav>
+
+			<h1 class="page-header">راهنمای ویکی</h1>
+			<div class="page-wrapper-inner">
+				<p>اول از همه، از این‌که تصمیم گرفته‌اید به ویکی آرچ لینوکس کمک کنید، صمیمانه از شما متشکریم. به صورت کلی شما نیازی نیست که ابزار خاصی نصب داشته باشید، ویرایش ویکی از طریق ویرایش فایل‌های markdown صورت می‌گیرد. می‌توانید این کار را از طریق رابط کاربری گیت‌هاب و یا توسط ویرایش‌گر متن دلخواه خود انجام دهید. ما به این نتیجه رسیدیم که ویرایش‌گر های gedit در gnome و kate در KDE با متن فارسی بیشترین سازگاری را دارند. فایل‌های markdown پس از تأیید pull request شما، توسط گیت‌هاب پردازش می‌شوند و به فایل html تبدیل می‌گردند. این کار توسط ابزاری به نام jekyll انجام می‌پذیرد. اگر تمایل به ویرایش فایلی دارید، از url مرورگر مسیر فایل را پیدا کرده و سپس درون دایرکتوری docs دنبال آن بگردید. توجه کنید که فایلی که دنبال آن هستید فرمت md خواهد داشت (markdown). هر مطلب با بخش متغیرها شروع خواهد شد. اولین خط‌های همین فایل را مشاهده کنید. دو متغیر به اسم layout و title داریم. layout نوع مطلب را مشخص می‌کند (اکنون فقط post و category) و title هم به عنوان مطلب تبدیل می‌شود (تیتر اصلی ابتدای صفحه).</p>
+
+<p>اگر با markdown گیت‌هاب آشنایی دارید، خواندن ادامه‌ی این مطلب اختیاری است.</p>
+
+<h2 id="سرتیتر">سرتیتر</h2>
+
+<p>لطفاً از سرتیتر نوع اول استفاده نکنید. هر مطلب می‌بایست یک سرتیتر نوع اول داشته باشد (عنوان مطلب). ما آن‌را توسط متغیر title که در بالای صفحه تعیین می‌کنید، ایجاد می‌کنیم.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## سرتیتر نوع دوم
+## سرتیتر نوع سوم
+## سرتیتر نوع چهارم
+## سرتیتر نوع پنجم
+## سرتیتر نوع ششم
+</code></pre></div></div>
+
+<h2 id="ویرایش-متن">ویرایش متن</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*italic*
+**bold**
+~~strikethrough~~
+</code></pre></div></div>
+
+<ul>
+  <li><em>italic</em></li>
+  <li><strong>bold</strong></li>
+  <li><del>strikethrough</del></li>
+</ul>
+
+<p>برای رفتن به پاراگراف بعد، مطمئن شوید بین دو پاراگراف یک خط خالی وجود دارد.</p>
+
+<h2 id="لیست">لیست</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* گزینه ی اول
+* گزینه ی دوم
+  * زیر گزینه ی الف
+  * زیر گزینه ی ب
+</code></pre></div></div>
+
+<ul>
+  <li>گزینه ی اول</li>
+  <li>گزینه ی دوم
+    <ul>
+      <li>زیر گزینه ی الف</li>
+      <li>زیر گزینه ی ب</li>
+    </ul>
+  </li>
+</ul>
+
+<p>برای ایجاد زیر گزینه، می‌بایست دو کاراکتر فاصله تفاوت را لحاظ کنید.</p>
+
+<h2 id="لیست-عدد-دار">لیست عدد دار</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. اول
+1. دوم
+   1. دوم الف
+   1. دوم ب
+</code></pre></div></div>
+<ol>
+  <li>اول</li>
+  <li>دوم
+    <ol>
+      <li>دوم الف</li>
+      <li>دوم ب</li>
+    </ol>
+  </li>
+</ol>
+
+<p>برای لیست عدد دار سه کاراکتر فاصله لازم است.</p>
+
+<h2 id="عکس">عکس</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![random image from unsplash](https://source.unsplash.com/IdLezSyNKdk/1600x900)
+</code></pre></div></div>
+
+<p><img src="https://source.unsplash.com/IdLezSyNKdk/1600x900" alt="random image from unsplash" /></p>
+
+<h2 id="دیگر">دیگر</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[link](bbs.archusers.ir/)
+</code></pre></div></div>
+<p>این یک لینک به <a href="bbs.archusers.ir/">انجمن</a> است.</p>
+
+<p>برای وارد کردن نظرات دیگران (quote):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; some line
+</code></pre></div></div>
+<blockquote>
+  <p>این متن توسط شخص دیگری گفته شده است.</p>
+</blockquote>
+
+<h2 id="کد">کد</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>inline `code` is like that
+</code></pre></div></div>
+<p>این خط شامل کد <code class="language-plaintext highlighter-rouge">/home/john</code> است.</p>
+
+<p>برای وارد کردن کد چندخطی:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="sb">```</span>javascript
+const someFunction <span class="o">=</span> <span class="o">()</span> <span class="o">=&gt;</span> <span class="o">{</span>
+  console.log<span class="o">(</span><span class="s1">'hello world'</span><span class="o">)</span><span class="p">;</span>
+<span class="o">}</span>
+<span class="sb">```</span></code></pre></figure>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">someFunction</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello world</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="sb">```</span>bash
+<span class="nv">$ </span><span class="nb">echo</span> <span class="s1">'hello world'</span>
+<span class="sb">```</span></code></pre></figure>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="s1">'hello world'</span>
+</code></pre></div></div>
+
+<h2 id="لیست-کار-ها">لیست کار ها</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [ ] انجام نشده
+- [x] انجام شده
+- [ ] انجام نشده
+</code></pre></div></div>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />انجام نشده</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />انجام شده</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />انجام نشده</li>
+</ul>
+
+<h2 id="جدول">جدول</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|تیتر ستون اول|تیتر ستون دوم|
+|سطر اول و ستون اول|سطر اول و ستون دوم|
+|سط دوم و ستون اول|سطر دوم و ستون دوم|
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>تیتر ستون اول</td>
+      <td>تیتر ستون دوم</td>
+    </tr>
+    <tr>
+      <td>سطر اول و ستون اول</td>
+      <td>سطر اول و ستون دوم</td>
+    </tr>
+    <tr>
+      <td>سط دوم و ستون اول</td>
+      <td>سطر دوم و ستون دوم</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>برای اطلاعات بیشتر می‌توانید به <a href="https://guides.github.com/features/mastering-markdown/">این لینک</a> مراجعه کنید.</p>
+
+			</div>
+		</div>
+	</body>
+</html>
