@@ -1,0 +1,160 @@
+I"�&<h1 id="moc">Moc</h1>
+<p>MOC یا همان Music On Console (موسیقی در کنسول) یک پخش کننده ی موسیقی سبک است که از دو قسمت تشکیل شده است، یک سرور(Moc) و یک پخش کننده/رابط (Mocp). این به mpd شبیه است، ولی برخلاف mpdماک یک رابط به همراه خود دارد. سرور ماک از دسترسی از راه دور پشتیبانی نمی کند.</p>
+
+<h2 id="نصب">نصب</h2>
+<p>بسته ی <a href="https://www.archlinux.org/packages/?name=moc">moc</a> را نصب کنید.</p>
+
+<h2 id="پیکر-بندی">پیکر بندی</h2>
+<p>بسته ی مورد نظر حاوی یک فایل پیکر بندی نمونه در ‎<code class="language-html highlighter-rouge">/usr/share/doc/moc/config.example</code>‎ است. جهت پیکر بندی moc این فایل را در ‎<code class="language-html highlighter-rouge">~/.moc/config</code>‎ کپی کنید و آنرا ویرایش نمایید.</p>
+
+<p>تم ها در <code class="language-html highlighter-rouge">‎/usr/share/moc/themes‎</code> موجودند که بسیار قابل فهم و ساده هستند، جهت ساخت تم <code class="language-html highlighter-rouge">example_theme</code> را در همین مسیر مشاهده کنید.</p>
+
+<p>جهت دستور العمل در مورد شخصی سازی کلید ها، ‎<code class="language-html highlighter-rouge">/usr/share/doc/moc/keymap.example</code>‎ را مطالعه فرمایید.</p>
+
+<h3 id="اعلان-تعویض-ترانه">اعلان تعویض ترانه</h3>
+<p>اسکریپت زیر را ذخیره کرده و دسترسی های لازم <code class="language-html highlighter-rouge">(chmod +x)</code> را اعمال فرمایید:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c">#!/bin/sh</span>
+notify-send <span class="s2">"</span><span class="nv">$1</span><span class="s2"> - </span><span class="nv">$2</span><span class="s2"> (</span><span class="nv">$3</span><span class="s2">)"</span></code></pre></figure>
+
+<p>و در فایل پیکر بندی پیشفرض خط زیر را اضاف کنید:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">OnSongChange <span class="o">=</span> <span class="s2">"/home/mazhar/.moc/notify_moc %a %t %r"</span></code></pre></figure>
+
+<h2 id="استفاده">استفاده</h2>
+<p>ماک را شروع کنید:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"> <span class="nv">$ </span>mocp</code></pre></figure>
+
+<p>این سرور و رابط را راه اندازی می کند. یک سری میانبر(شرتکات) مفید (حساس به حروف بزرگ و کوچک):</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>پخش کردن یک فایل موسیقی</td>
+      <td>Enter‎</td>
+    </tr>
+    <tr>
+      <td>توقف موقتی (pause)</td>
+      <td>‎Space‎ or ‎p‎</td>
+    </tr>
+    <tr>
+      <td>فایل موسیقی بعدی</td>
+      <td>n</td>
+    </tr>
+    <tr>
+      <td>فایل موسیقی قبلی</td>
+      <td>‎b‎</td>
+    </tr>
+    <tr>
+      <td>سویچ کردن بین لیست پخش و فایل های سیستم</td>
+      <td>Tab‎</td>
+    </tr>
+    <tr>
+      <td>یک فایل موسیقی را به لیست پخش اضافه کردن</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>حذف فایل موسیقی از لیست پخش</td>
+      <td>d</td>
+    </tr>
+    <tr>
+      <td>یک پوشه را به همراه زیر پوشه ها به لیست پخش اضافه کردن</td>
+      <td>Shift+a‎</td>
+    </tr>
+    <tr>
+      <td>پاک کردن لیست پخش</td>
+      <td>Shift+c‎</td>
+    </tr>
+    <tr>
+      <td>اضافه کردن میزان صدا۵ درصد</td>
+      <td>‎.‎ (dot)</td>
+    </tr>
+    <tr>
+      <td>کاهش میزان صدا۵ درصد</td>
+      <td>‎,‎ (comma)</td>
+    </tr>
+    <tr>
+      <td>اضافه کردن میزان صدا ۱ درصد</td>
+      <td>&gt;‎</td>
+    </tr>
+    <tr>
+      <td>کاهش میزان صدا ۱ درصد</td>
+      <td>&lt;‎</td>
+    </tr>
+    <tr>
+      <td>میزان صدا را به ۱۰ درصد بردن</td>
+      <td>meta+1‎</td>
+    </tr>
+    <tr>
+      <td>میزان صدا را به ۲۰ درصد بردن</td>
+      <td>meta+2‎</td>
+    </tr>
+    <tr>
+      <td>خارج شدن از رابط کاربری</td>
+      <td>q</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>توجه: برای قطع سرور از <code class="language-html highlighter-rouge">‎Shift+q‎</code> یا ‎<code class="language-html highlighter-rouge">$ mocp -x</code>‎ استفاده کنید.</p>
+
+<h2 id="lastfm-scrobbling">Last.fm scrobbling</h2>
+<h3 id="mocp-scrobbler">mocp-scrobbler</h3>
+<p><code class="language-html highlighter-rouge">mocp-scrobbler</code> یک <code class="language-html highlighter-rouge">Last.fm/Libre.fm scrobbler</code> است برای ماک با پشتیبانی از اعلان ها، daemonization و کش(cache) now-playing (در حال پخش).این scrobbler فقط بستگی به 3 Python دارد.</p>
+
+<p>فایل نمونه را به پوشه پیکربندی کاربر کپی کنید:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nv">$ </span><span class="nb">mkdir</span> ~/.mocpscrob/
+<span class="nv">$ </span><span class="nb">cp</span> /usr/share/doc/mocp-scrobbler/config.example  ~/.mocpscrob/config</code></pre></figure>
+
+<p>‎<code class="language-html highlighter-rouge">~/.mocpscrob/config‎</code> را ویرایش کنید تا اسم کاربری و رمز عبور خود را اضافه کنید.در اولین اجرا متغیر رمز عبور با ‎password_md5‎ جایگزین می شود. مقدارش همان مقدار اصلی خواهد بود البته با درهمریختگی الگوریتم MD5. اگر می خواهید رمز عبور را عوض کنید، فقط کافیست رمز جدید خود را اضافه کنید و ‎password_md5‎ جایگزین خواهد شد.</p>
+
+<p>برای scrobble فایل های موسیقی قبل از mocp باید mocp-scrobbler را به عنوان daemon شروع کنید(فعال کنید). شما حتی می توانید یک alias استفاده کنید:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">alias </span><span class="nv">mocp</span><span class="o">=</span><span class="s1">'/usr/bin/mocp-scrobbler.py -d; mocp'</span></code></pre></figure>
+
+<h2 id="فایل-سرویس-systemd">فایل سرویس systemd</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">/etc/systemd/system/moc@.service</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="o">[</span>Unit]
+<span class="nv">Description</span><span class="o">=</span>MOC server
+<span class="nv">ConditionPathExists</span><span class="o">=</span>/usr/bin/mocp
+<span class="nv">After</span><span class="o">=</span>network.target sound.target
+
+
+<span class="o">[</span>Service]
+<span class="nv">RemainAfterExit</span><span class="o">=</span><span class="nb">yes
+</span><span class="nv">User</span><span class="o">=</span>%I
+<span class="nv">ExecStart</span><span class="o">=</span>/usr/bin/mocp <span class="nt">-S</span>
+<span class="nv">ExecStop</span><span class="o">=</span>/usr/bin/mocp <span class="nt">-x</span>
+<span class="nv">WorkingDirectory</span><span class="o">=</span>/home/%I/
+
+<span class="o">[</span>Install]
+<span class="nv">WantedBy</span><span class="o">=</span>multi-user.target</code></pre></figure>
+
+<p>این سرویس را برای کاربر مربوطه فعال کنید.</p>
+
+<h2 id="مشکل-زدایی">مشکل زدایی</h2>
+<h3 id="ماک-اجرا-نمی-شود">ماک اجرا نمی شود</h3>
+<p>اگر ماک اجرا نمی شود، به احتمال زیاد مشکلی در ‎<code class="language-html highlighter-rouge">~/.moc</code>‎ وجود دارد. می توانید سعی کنید که مشکل را برطرف کنید، یا اینکه کلاً پوشه ی آن را حذف کنید.</p>
+
+<h3 id="کاراکتر-های-عجیب">کاراکتر های عجیب</h3>
+<p>اگر کاراکتر های عجیبی در <code class="language-html highlighter-rouge">moc</code> به جای خط های عادی (خط های عمودی که جدا کننده هستند) می بینید، احتمالاً فونت شما با ماک سازگار نیست. یا فونت مربوطه را عوض کنید یا <code class="language-html highlighter-rouge">‎.moc/config‎</code> را ویرایش کنید تا از <code class="language-html highlighter-rouge">ASCII</code> برای نمایش خط ها استفاده شود.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>ASCIILines = no
+</code></pre></div></div>
+<h3 id="fatal_error-layout1-is-malformed">FATAL_ERROR: Layout1 is malformed</h3>
+<p>اگر ماک با این خطا از کار می افتد، یکی از این خط ها را به ‎<code class="language-html highlighter-rouge">.moc/config</code>‎ اضافه کنید:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>Layout1 = directory(0,0,50%,100%): playlist(50%,0,100%,100%)
+</code></pre></div></div>
+<p>یا</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>Layout1 = directory(0,0,50%,100%): playlist(50%,0,FILL,100%)
+</code></pre></div></div>
+
+<h2 id="همچنین-مشاهده-کنید">همچنین مشاهده کنید</h2>
+<p><a href="http://moc.daper.net/documentation">Official documentation</a></p>
+
+:ET

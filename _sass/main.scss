@@ -1,0 +1,17 @@
+@import "native";
+@import "font";
+
+* {
+	font-family: Vazir;
+	box-sizing: border-box;
+	direction: rtl;
+}
+
+html, body {
+	min-width: 100vw;
+	min-height: 100vh;
+	margin: 0;
+}
+
+@import "category";
+@import "post";
