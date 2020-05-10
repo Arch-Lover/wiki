@@ -245,6 +245,8 @@ li { padding: 5px 0px; }
 
 li:before { content: "\21D0"; margin: 0 0.6em; }
 
+img { width: 100%; height: auto; }
+
 table { border-collapse: collapse; }
 
 td { padding: 15px; }
@@ -261,4 +263,12 @@ figure { margin: 0; }
 
 .highlight pre { padding: 20px; }
 
-code.language-plaintext { background-color: #ddd; padding: 3px 4px; }
+code.language-plaintext { background-color: #ddd; padding: 3px 4px; direction: ltr; }
+
+.note { background: linear-gradient(to right, #F37335, #FDC830); color: white; text-align: center; padding: 10px; }
+
+.note::before { content: "\1F5D2"; margin: 0 0.6em; }
+
+.warning { background: linear-gradient(to right, #BD3F32, #CB356B); color: white; text-align: center; padding: 10px; }
+
+.warning::before { content: "\26A0"; margin: 0 0.6em; }

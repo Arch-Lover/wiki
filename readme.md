@@ -12,6 +12,7 @@ to render markdown files into their corresponding layouts.
 - [ ] Fix image width
 - [ ] LTR inline code
 - [ ] style quotes
+- [ ] add classes for notes and warnings
 - [ ] Add favicon
 - [ ] Incorporate new logo (morealz's logo competition)
 - [ ] Use [this](https://github.com/allejo/jekyll-toc) to render Table of Content
