@@ -9,5 +9,5 @@ It is available for Unix-like, Windows and macOS.[4] Clementine is released unde
 اولین نسخه کلمنتاین در فروزیه سال ۲۰۱۰ عرضه گردید.
 
 ## نصب
-بسته ی [Clementine](https://www.archlinux.org/packages/?name=Clementine) را نصب کنید.
+بسته ی [Clementine](https://www.archlinux.org/packages/?name=clementine) را نصب کنید.
 
