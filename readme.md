@@ -5,14 +5,14 @@ to render markdown files into their corresponding layouts.
 ## TODO list
 
 - [x] Write a "writing guide"
-- [ ] Post a forum article about the migration
+- [x] Post a forum article about the migration
 - [x] Mobile friendly layouts
 - [x] Limit page width for better readability
 - [ ] Add monospace font for code sections
-- [ ] Fix image width
-- [ ] LTR inline code
+- [x] Fix image width
+- [x] LTR inline code
 - [ ] style quotes
-- [ ] add classes for notes and warnings
+- [x] add classes for notes and warnings
 - [ ] Add favicon
 - [ ] Incorporate new logo (morealz's logo competition)
 - [ ] Use [this](https://github.com/allejo/jekyll-toc) to render Table of Content
