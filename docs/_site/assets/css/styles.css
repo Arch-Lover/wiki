@@ -212,6 +212,10 @@
 @font-face { font-family: Vazir; src: url("../font/Vazir-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; }
 @font-face { font-family: Vazir; src: url("../font/Vazir-Light.ttf") format("truetype"); font-weight: 300; font-style: normal; }
 @font-face { font-family: Vazir; src: url("../font/Vazir-Thin.ttf") format("truetype"); font-weight: 100; font-style: normal; }
+@font-face { font-family: FiraCode; src: url("../font/FiraCode-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: FiraCode; src: url("../font/FiraCode-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; }
+@font-face { font-family: FiraCode; src: url("../font/FiraCode-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; }
+@font-face { font-family: FiraCode; src: url("../font/FiraCode-Light.ttf") format("truetype"); font-weight: 300; font-style: normal; }
 * { font-family: Vazir; box-sizing: border-box; direction: rtl; }
 
 html, body { min-width: 100vw; min-height: 100vh; margin: 0; }
@@ -253,17 +257,23 @@ td { padding: 15px; }
 
 table, td, th { border: 1px solid #ddd; }
 
-.highlight { direction: ltr; color: white; }
+.highlight { direction: ltr; color: white; font-family: FiraCode; }
 
-pre { overflow-x: auto; }
+pre { overflow-x: auto; font-family: FiraCode; }
 
-figure { margin: 0; }
+figure { margin: 0; font-family: FiraCode; }
 
-.highlight * { direction: ltr; }
+.highlight * { direction: ltr; font-family: FiraCode; }
 
-.highlight pre { padding: 20px; }
+.highlight pre { padding: 20px; font-family: FiraCode; }
 
-code.language-plaintext { background-color: #ddd; padding: 3px 4px; direction: ltr; }
+code.language-plaintext { background-color: #ddd; padding: 3px 4px; direction: ltr; font-family: FiraCode; }
+
+blockquote { background: linear-gradient(to right, #67798e, #bdc3c7); padding: 10px; }
+
+blockquote p::before { content: "\""; margin: 0 0.5rem; font-size: 1.5rem; }
+
+blockquote p::after { content: "\""; margin: 0 0.5rem; font-size: 1.5rem; }
 
 .note { background: linear-gradient(to right, #F37335, #FDC830); color: white; text-align: center; padding: 10px; }
 

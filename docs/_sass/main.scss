@@ -108,23 +108,44 @@ table, td, th {
 .highlight {
 	direction: ltr;
 	color: white;
+	font-family: FiraCode;
 }
 pre {
 	overflow-x: auto;
+	font-family: FiraCode;
 }
 figure {
 	margin: 0;
+	font-family: FiraCode;
 }
 .highlight * {
 	direction: ltr;
+	font-family: FiraCode;
 }
 .highlight pre {
 	padding: 20px;
+	font-family: FiraCode;
 }
 code.language-plaintext {
 	background-color: #ddd;
 	padding: 3px 4px;
 	direction: ltr;
+	font-family: FiraCode;
+}
+
+blockquote {
+	background: linear-gradient(to right, $dark-quote, $light-quote);
+	padding: 10px;
+}
+blockquote p::before {
+	content: "\"";
+	margin: 0 0.5rem;
+	font-size: 1.5rem;
+}
+blockquote p::after {
+	content: "\"";
+	margin: 0 0.5rem;
+	font-size: 1.5rem;
 }
 
 .note {

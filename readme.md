@@ -8,10 +8,10 @@ to render markdown files into their corresponding layouts.
 - [x] Post a forum article about the migration
 - [x] Mobile friendly layouts
 - [x] Limit page width for better readability
-- [ ] Add monospace font for code sections
+- [x] Add monospace font for code sections
 - [x] Fix image width
 - [x] LTR inline code
-- [ ] style quotes
+- [x] style quotes
 - [x] add classes for notes and warnings
 - [ ] Add favicon
 - [ ] Incorporate new logo (morealz's logo competition)
