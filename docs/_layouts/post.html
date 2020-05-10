@@ -10,6 +10,7 @@
 		<div class="page-wrapper-outer">
 			{% include navbar.html %}
 			<h1 class="page-header">{{ page.title }}</h1>
+			{% include toc.html html=content %}
 			<div class="page-wrapper-inner">
 				{{ content }}
 			</div>

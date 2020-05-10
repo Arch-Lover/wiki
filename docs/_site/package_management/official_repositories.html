@@ -15,6 +15,28 @@
 </nav>
 
 			<h1 class="page-header">مخازن رسمی</h1>
+			<ul>
+  <li><a href="#مخازن">مخازن</a>
+    <ul>
+      <li><a href="#هسته-core">هسته (core)</a></li>
+    </ul>
+  </li>
+  <li><a href="#extra">extra</a></li>
+  <li><a href="#اجتماعی-community">اجتماعی (community)</a></li>
+  <li><a href="#multilib">Multilib</a></li>
+  <li><a href="#آزمایشی-testing">آزمایشی (testing)</a>
+    <ul>
+      <li><a href="#اجتماعی-آزمایشی-community-testing">اجتماعی-آزمایشی (community-testing)</a></li>
+      <li><a href="#multilib-testing">Multilib-testing</a></li>
+      <li><a href="#gnome-unstable">Gnome-unstable</a></li>
+      <li><a href="#kde-unstable">Kde-unstable</a></li>
+      <li><a href="#غیرفعال-کردن-مخازن-آزمایشی">غیرفعال کردن مخازن آزمایشی</a></li>
+    </ul>
+  </li>
+  <li><a href="#پیشینهی-تاریخی">پیشینه‌ی تاریخی</a></li>
+</ul>
+
+
 			<div class="page-wrapper-inner">
 				<p><a href="https://en.wikipedia.org/wiki/software_repository">مخزن‌ نرم‌افزار</a> یک محل ذخیره‌سازی است که بسته‌های نرم‌افزار برای نصب از آنجا بازیابی می‌شوند.</p>
 
@@ -29,7 +51,7 @@
 <h2 id="مخازن">مخازن</h2>
 <h3 id="هسته-core">هسته (core)</h3>
 
-<p>این مخزن در آدرس <code class="language-plaintext highlighter-rouge">‎.../core/os‎</code> در آیینه مورد نظر یافت می‌شود.</p>
+<p>این مخزن در آدرس <code class="language-plaintext highlighter-rouge">‎.../core/os‎</code> در [آیینه[(https://archusersir.github.io/wiki/package_management/mirror.html) مورد نظر یافت می‌شود.</p>
 
 <p>مخزن هسته دارای بسته‌هایی برای</p>
 
@@ -44,24 +66,25 @@
 <p>همینطور وابستگی‌‌های بسته‌های بالا است.</p>
 
 <h2 id="extra">extra</h2>
-<p>این مخزن در آدرس <code class="language-plaintext highlighter-rouge">‎.../extra/os‎</code> در آیینه مورد نظر یافت می‌شود.</p>
+<p>این مخزن در آدرس <code class="language-plaintext highlighter-rouge">‎.../extra/os‎</code> در [آیینه[(https://archusersir.github.io/wiki/package_management/mirror.html) مورد نظر یافت می‌شود.</p>
 
 <p>مخزن extra تمام بسته هایی را که در مخزن هسته نمی‌گنجند، در بر می‌گیرد. برای مثال: xorg، مدیر پنجره‌ها، مرورگر‌ها، دستگاه‌های پخش رسانه، ابزار برای کار با زبان‌هایی چون پایتون و روبی، و چیزهای دیگر.</p>
 <h2 id="اجتماعی-community">اجتماعی (community)</h2>
 
-<p>این مخزن در آدرس ‎<code class="language-plaintext highlighter-rouge">.../community/os</code>‎ در آیینه مورد نظر یافت می‌شود.</p>
+<p>این مخزن در آدرس ‎<code class="language-plaintext highlighter-rouge">.../community/os</code>‎ در [آیینه[(https://archusersir.github.io/wiki/package_management/mirror.html) مورد نظر یافت می‌شود.</p>
 
 <p>مخزن اجتماعی دارای بسته‌هایی از  <a href="https://archusersir.github.io/wiki/package_management/aur.html">AUR</a> است که توسط کاربران قابل اعتماد تصویب شده‌اند. اگر توسعه‌دهنگان، این بسته‌ها را برای توزیع، حیاتی در نظر بگیرند، بعضی از این بسته‌ها در نهایت به مخزن هسته یا extra انتقال می‌یابند.</p>
 <h2 id="multilib">Multilib</h2>
 
-<p>این مخزن در آدرس <code class="language-plaintext highlighter-rouge">‎.../multilib/os‎</code> در آیینه مورد نظر یافت می‌شود.</p>
+<p>این مخزن در آدرس <code class="language-plaintext highlighter-rouge">‎.../multilib/os‎</code> در [آیینه[(https://archusersir.github.io/wiki/package_management/mirror.html) مورد نظر یافت می‌شود.</p>
 
 <p>مخزن multilib دارای نرم‌افزارهای ۳۲ بیتی و کتاب‌خانه‌های مورد استفاده در ساخت نرم‌افزارهای ۳۲ بیتی در یک سیستم ۶۴ بیتی است. (برای مثال: <a href="https://www.archlinux.org/packages/?name=wine">wine</a> ،<a href="https://www.archlinux.org/packages/?name=steam">steam</a>  و غیره)</p>
 
 <h2 id="آزمایشی-testing">آزمایشی (testing)</h2>
-<p>هشدار: اگر مخزن آزمایشی خود را فعال می‌کنید، حواستان را جمع کنید. ممکن است سیستم شما پس از یک به‌روز‌رسانی آسیب ببیند. تنها افراد با‌تجربه که می‌دانند چطور با یک سیستم آسیب‌دیده رفتار کنند، باید از این مخزن استفاده کنند.</p>
-
-<p>این مخزن در آدرس <code class="language-plaintext highlighter-rouge">‎.../testing/os‎</code> در آیینه مورد نظر یافت می‌شود.</p>
+<p class="warning">
+اگر مخزن آزمایشی خود را فعال می‌کنید، حواستان را جمع کنید. ممکن است سیستم شما پس از یک به‌روز‌رسانی آسیب ببیند. تنها افراد با‌تجربه که می‌دانند چطور با یک سیستم آسیب‌دیده رفتار کنند، باید از این مخزن استفاده کنند.
+</p>
+<p>این مخزن در آدرس <code class="language-plaintext highlighter-rouge">‎.../testing/os‎</code> در [آیینه[(https://archusersir.github.io/wiki/package_management/mirror.html) مورد نظر یافت می‌شود.</p>
 
 <p>مخزن آزمایشی دارای بسته هایی است که داوطلب حضور در مخزن هسته یا extra هستند.</p>
 
@@ -73,11 +96,12 @@
 </ul>
 
 <p>مخزن آزمایشی تنها مخزنی است که می‌تواند با مخازن رسمی دیگر تصادف نامی داشته‌باشد. اگر فعال شود، باید اولین مخزن در پرونده‌ی ‍‎<code class="language-plaintext highlighter-rouge">/etc/pacman.conf‍</code>‎ باشد.</p>
-
-<p>توجه: مخزن آزمایشی برای جدید‌ترین بسته ها نیست. بخشی از هدف آن نگه‌داری بسته‌های به‌روزی است که پتانسیل آسیب رساندن به سیستم را دارند، یا بسته هایی که می‌خواهند بخشی از مخزن هسته باشند، یا به شکل‌های دیگر بحرانی باشند. کابران مخزن آزمایشی تشویق می‌شوند که با arch-dev-public mailing list در ارتباط باشند، testing repository forum را مشاهده کنند و تمام مشکلات را گزارش دهند.</p>
-
-<p>هشدار: اگر مخزن آزمایشی را فعال کردید، باید مخرن اجتماعی-آزمایشی را هم فعال کنید.اگر هر یک از مخازن آزمایشی زیر را فعال کردید، باید هر دو مخزن آزمایشی و اجتماعی-آزمایشی را هم فعال کنید.</p>
-
+<p class="note">
+مخزن آزمایشی برای جدید‌ترین بسته ها نیست. بخشی از هدف آن نگه‌داری بسته‌های به‌روزی است که پتانسیل آسیب رساندن به سیستم را دارند، یا بسته هایی که می‌خواهند بخشی از مخزن هسته باشند، یا به شکل‌های دیگر بحرانی باشند. کابران مخزن آزمایشی تشویق می‌شوند که با arch-dev-public mailing list در ارتباط باشند، testing repository forum را مشاهده کنند و تمام مشکلات را گزارش دهند.
+</p>
+<p class="warning">
+اگر مخزن آزمایشی را فعال کردید، باید مخرن اجتماعی-آزمایشی را هم فعال کنید.اگر هر یک از مخازن آزمایشی زیر را فعال کردید، باید هر دو مخزن آزمایشی و اجتماعی-آزمایشی را هم فعال کنید.
+</p>
 <h3 id="اجتماعی-آزمایشی-community-testing">اجتماعی-آزمایشی (community-testing)</h3>
 
 <p>این مخزن شبیه مخزن آزمایشی است با این تفاوت که بسته‌های آن داوطلب حضور در مخزن اجتماعی هستند.</p>
@@ -103,7 +127,7 @@ Include <span class="o">=</span> /etc/pacman.d/mirrorlist</code></pre></figure>
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="o">[</span>kde-unstable]
 Include <span class="o">=</span> /etc/pacman.d/mirrorlist</code></pre></figure>
 
-<p>ورودی kde-unstable باید اولین خط در فهرست مخازن باشد. (قبل از ورودی آزمایشی) اگر مشکلی مشاهده کردید حتماً گزارش دهید.</p>
+<p>ورودی kde-unstable باید اولین خط در فهرست مخازن باشد (قبل از ورودی آزمایشی). اگر مشکلی مشاهده کردید حتماً گزارش دهید.</p>
 <h3 id="غیرفعال-کردن-مخازن-آزمایشی">غیرفعال کردن مخازن آزمایشی</h3>
 
 <p>اگر مخازن‌ آزمایشی را فعال کردید، سپس تصمیم گرفتید آن‌ها را غیرفعال کنید، شما باید:</p>
