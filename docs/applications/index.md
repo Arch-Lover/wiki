@@ -17,6 +17,7 @@ title: نرم افزارها
 ### مالتی مدیا
 - [VLC](./vlc.html) [](https://wiki.archusers.ir/index.php/%D9%BE%D8%AE%D8%B4%E2%80%8C%DA%A9%D9%86%D9%86%D8%AF%D9%87_%D8%B5%D9%88%D8%AA%DB%8C%E2%80%8C%D8%AA%D8%B5%D9%88%DB%8C%D8%B1%DB%8C_VLC)
 - [Moc](./moc.html) [این صفحه منتقل شود](https://wiki.archusers.ir/index.php/Moc)
+- [Clementine](./Clementine.md)
 
 ### مدیر فایل
 - [Ranger](./ranger.html) [این صفحه منتقل شود](https://wiki.archusers.ir/index.php/Ranger)
